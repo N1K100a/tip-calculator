@@ -1,0 +1,83 @@
+.right-side {
+  width: 413px;
+  height: 417px;
+  border-radius: 15px;
+  background-color: #00474b;
+  margin: 32px;
+  margin-left: 0;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.calc-value-con {
+  display: flex;
+  justify-content: space-between;
+}
+
+.calc-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.calc-left p {
+  margin: 0;
+  font-size: 16px;
+  color: white;
+}
+.calc-left span {
+  font-size: 13px;
+  color: #7f9d9f;
+}
+
+.calc-right {
+  font-size: 48px;
+  letter-spacing: -1px;
+  color: #26c2ae;
+}
+
+.calc-value-con:last-child {
+  margin-top: 25px;
+}
+
+.reset {
+  font-size: 20px;
+  width: 100%;
+  height: 48px;
+  background-color: #0d686d;
+  color: #00474b;
+  border: none;
+  border-radius: 5px;
+}
+
+.reset-can {
+  background-color: #26c2ae;
+  cursor: pointer;
+}
+
+@media (max-width: 910px) {
+  .right-side {
+    width: 100%;
+    margin-left: 20px;
+  }
+  .calc-right {
+    line-height: 70px;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 725px) {
+  .right-side {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  .right-side {
+    width: auto;
+    height: 300px;
+    margin: 24px;
+    padding: 24px;
+  }
+}
