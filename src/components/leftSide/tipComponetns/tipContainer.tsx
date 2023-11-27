@@ -23,7 +23,7 @@ export default function TipContainer({
       setCustomValue(undefined);
       setTip(undefined);
     }
-  }, [setCustomValue]);
+  }, []);
   const btnClick = (number: number) => {
     if (tip && number === tip * 100) {
       setTip(0);

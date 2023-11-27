@@ -28,7 +28,7 @@ export default function LeftSide({
     if (people && people < 0) {
       setPeople(undefined);
     }
-  }, [setPeople]);
+  }, []);
   return (
     <div className="left-side">
       <span className="span">Bill</span>
