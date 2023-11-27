@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import "./tipContainer.css";
-import { useState } from "react";
 
 interface Props {
   setTip: React.Dispatch<React.SetStateAction<number | undefined>>;
@@ -24,7 +23,7 @@ export default function TipContainer({
       setCustomValue(undefined);
       setTip(undefined);
     }
-  }, [customValue]);
+  }, [setCustomValue]);
   const btnClick = (number: number) => {
     if (tip && number === tip * 100) {
       setTip(0);

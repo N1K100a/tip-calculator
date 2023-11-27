@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import "./leftSide.css";
 import TipContainer from "./tipComponetns/tipContainer";
 import peopleIcon from "./../../images/icon-person.svg";
@@ -28,7 +28,7 @@ export default function LeftSide({
     if (people && people < 0) {
       setPeople(undefined);
     }
-  }, [people]);
+  }, [setPeople]);
   return (
     <div className="left-side">
       <span className="span">Bill</span>
